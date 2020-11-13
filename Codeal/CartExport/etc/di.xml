@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Codeal\CartExport\Api\QuoteExportManagementInterface"
+                type="Codeal\CartExport\Service\QuoteExportService"
+    />
+    <preference for="Codeal\CartExport\Model\Quote\Item\Formatter\ItemToStringFormatterInterface"
+                type="Codeal\CartExport\Model\Quote\Item\Formatter\ItemToCsvFormatter"
+    />
+</config>
